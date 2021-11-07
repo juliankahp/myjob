@@ -1,0 +1,147 @@
+p,
+header,
+nav,
+main,
+section,
+aside,
+footer {
+    display: grid;
+    font-family: 'Arial', Times, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2vw;
+    border: 1px solid olivedrab;
+}
+
+.container {
+    display: grid;
+    width: 95%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 1fr 25%;
+    grid-template-areas:
+        'header header header header header'
+        'osnova osnova osnova bok bok'
+        'footer footer footer footer footer';
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .podval {
+        justify-content: space-around;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-gap: 10px;
+        text-align: center;
+        background-color: rgb(224, 224, 224);
+        grid-area: footer;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .podval {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        width: 95%;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 1fr 25%;
+        grid-template-areas:
+            'header header header header header'
+            'osnova osnova osnova bok bok'
+            'footer footer footer footer footer';
+    }
+}
+
+@media screen and (min-width:300px) and (max-width: 767px) {
+    .podval {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        width: 95%;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 1fr 25%;
+        grid-template-areas:
+            'header'
+            'osnova'
+            'bok';
+    }
+}
+
+
+.shapka,
+.osnova,
+.bok {
+    padding: 30px;
+    text-align: center;
+}
+
+.shapka {
+    background-color: rgb(224, 224, 224);
+    grid-area: header;
+}
+
+.osnova {
+    background-color: #fef8e3;
+    grid-area: osnova;
+}
+
+.bok {
+    background-color: rgb(221, 236, 203);
+    grid-area: bok;
+}
+
+.esche {
+    grid-template-rows: 1fr 1fr;
+    grid-row-start: 10;
+    grid-gap: 30px;
+    align-items: center;
+}
+
+.one {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(254, 234, 185);
+    margin-top: 10px;
+}
+
+.two {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(254, 234, 185);
+    margin-top: 10px;
+}
+
+.three {
+    grid-column: 1/5;
+    grid-row: 2/2;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(254, 234, 185);
+    margin-top: 0;
+}
+
+.podval {
+    grid-area: footer;
+    justify-content: space-around;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 10px;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+}
+
+p {
+    background-color: rgb(250, 250, 250);
+    padding: 3px;
+}
