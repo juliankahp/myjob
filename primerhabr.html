@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMER HABR</title>
+    <link rel="stylesheet" href="./primerhabr.css">
+    <link rel="stysheet" href="./assets/styles/normalize.css">
+    <style>
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 200px);
+    width: 100%;
+    height: 100%;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div><img src="./assets/images/cat.jpg" alt="лес"></div>
+        <div><img src="./assets/images/haski.jpg"></div>
+        <div><img src="./assets/images/lev.jpg"></div>
+        <div><img src="./assets/images/more.jpg"></div>
+        <div><img src="./assets/images/ris.jpg"></div>
+        <div><img src="./assets/images/vodopad.jpg"></div>
+        <div><img src="./assets/images/korabl.jpg"></div>
+        <div><img src="./assets/images/gora.jpg"></div>
+        <div><img src="./assets/images/belka.jpg"></div>
+    </div>
+
+</body>
+</html>
